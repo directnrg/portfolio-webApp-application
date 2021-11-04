@@ -1,0 +1,36 @@
+  <!-- Fabian Soto Palacio | Student ID : 301153142 -->
+<div class="container">
+  <h1><%= title %></h1>
+  <form method="POST" class="col-leg-4 col-md-8 col-sm-8 ">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="contactName">Name</span>
+      <input type="text" class="form-control" placeholder="Contact Name" aria-label="Contact Name"
+        aria-describedby="Contact Name" name="contactName" value="<%= item.contactName%>" required />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="contactNumber">Phone Number</span>
+      <input type="text" class="form-control" placeholder="Contact Number" name="contactNumber" aria-label="Contact Number"
+        aria-describedby="Contact Number" value="<%= item.contactNumber%>" required />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="emailAddress">Email Address</span>
+      <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address"
+        aria-describedby="Email Address" name="emailAddress"value="<%= item.emailAddress%>" required />
+    </div>
+
+    <% if (title.search("Edit") > -1 ) { %>
+    <button type="submit" id="editButton" class="btn btn-primary">
+      <i class="fas fa-check"></i> Accept
+    </button>
+    <% } else { %>
+    <button type="submit" id="submitButton" class="btn btn-primary">
+      <i class="far fa-address-book"></i> Add
+    </button>
+
+    <% } %>
+
+    <a href="/contact/list" id="cancelButton" type="button" class="btn btn-secondary"><i class="fas fa-undo-alt"></i>
+      Cancel</a>
+
+  </form>
+</div>

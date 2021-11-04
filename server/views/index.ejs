@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!-- Fabian Soto Palacio | Student ID : 301153142 -->
+
+<head>
+  <title><%= title %></title>
+  <link rel="icon" href="../../client/assets/images/logoFS_favicon.png" type="image/png">  
+  <link rel="stylesheet" href="/content/portafolio.css" />
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css" />
+  
+</head>
+
+<body>
+  <!-- nav bar section-->
+  <%- include('./components/header.ejs'); %>
+  <!-- nav bar section-->
+
+  <!-- Main Section -->
+  <main>
+    <%- include('./content/' + page + '.ejs'); %>
+  </main>
+  <!--  bottom footer-->
+  <%- include('./components/footer.ejs'); %>
+  <!--end fotter-->
+
+  <!-- JavaScript section -->
+  <script src="/scripts/portafolio.js"></script>
+  <script src="/jquery/dist/jquery.min.js"></script>
+  <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

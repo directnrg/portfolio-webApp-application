@@ -1,0 +1,47 @@
+  <!-- Fabian Soto Palacio | Student ID : 301153142 -->
+  <!-- bootstrap nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img class="logoSize" src="../../assets/images/logoFS.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/"><i class="fas fa-couch navBarIcons"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about"><i class="fas fa-child navBarIcons"></i>
+
+              About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects"><i class="fas fa-puzzle-piece navBarIcons"></i>
+
+              Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services"><i class="fas fa-robot navBarIcons"></i>Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact"><i class="fas fa-hands-helping navBarIcons"></i>Contact</a>
+          </li>
+          <% if(displayName) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact/list">Business Contact List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/authentication/logout"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
+          </li>
+          <% } else { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/authentication/login"><i class="fas fa-sign-in-alt fa-lg"></i> Login</a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </nav>
